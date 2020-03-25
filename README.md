@@ -19,7 +19,7 @@
 * tdesktop 代码用的是 `dc8abc74ed4d72a73315550b91283ff1f2e44199`
 * 基于打了这个补丁，另外修复了补丁编译问题：https://github.com/nebula-chat/clients/tree/master/tdesktop
 * 更换了默认聊天背景图
-* 另外有两个文件因为编译问题修改了存储字符编码，代码未做任何改动， `ffmpeg/libavutil\rational.h` `Telegram\SourceFiles\ui\text\text.cpp`
+* 另外有两个文件因为编译问题修改了存储字符编码，代码未做任何改动， `ffmpeg\libavutil\rational.h` `Telegram\SourceFiles\ui\text\text.cpp`
 * tdesktop目录是clone官方仓库，可将该目录导入到git图形客户端查看具体改动，推荐使用 `Github Desktop` 可直接预览图片改动
 
 # 环境配置
