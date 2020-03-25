@@ -8,6 +8,11 @@
 * MD5 (python-2.7.17.amd64.msi) = 55040ce1c1ab34c32e71efe9533656b8
 * MD5 (vs_community_2017_1889860080.1578036349.exe) = 1dea05839475e38d9ba7e346b4142797
 
+# 相关链接
+
+https://github.com/telegramdesktop/tdesktop/blob/dc8abc74ed4d72a73315550b91283ff1f2e44199/docs/building-msvc.md
+https://github.com/nebula-chat/chatengine
+
 # 文件说明
 
 * 所有依赖库已编译好，编译环境是 Windows 10 Pro + VS 2017，系统设置成了英文完成了编译
