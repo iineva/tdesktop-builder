@@ -12,6 +12,7 @@
 
 https://github.com/telegramdesktop/tdesktop/blob/dc8abc74ed4d72a73315550b91283ff1f2e44199/docs/building-msvc.md
 https://github.com/nebula-chat/chatengine
+https://github.com/nebula-chat/clients/tree/master/tdesktop
 
 # 文件说明
 
