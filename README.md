@@ -2,6 +2,11 @@
 
 百度网盘：https://pan.baidu.com/s/1E19Ykmrkm29VDzMqEwH-kw 提取码：v3hi
 
+# 文件MD5
+
+MD5 (TBuild.rar) = 5340d240306f0eaff9aa920f702d9be4
+MD5 (python-2.7.17.amd64.msi) = 55040ce1c1ab34c32e71efe9533656b8
+MD5 (vs_community_2017_1889860080.1578036349.exe) = 1dea05839475e38d9ba7e346b4142797
 
 # 文件说明
 
