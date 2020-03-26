@@ -1,12 +1,17 @@
-# 网盘地址（欢迎上传到别的网盘的朋友追加一下）
+# 下载地址（欢迎上传到别的网盘的朋友提交PR追加）
 
-百度网盘：https://pan.baidu.com/s/1E19Ykmrkm29VDzMqEwH-kw 提取码：v3hi
+网盘 | 地址 | 提供者 | 密码/提取码 | 备注
+---- | ---- | ---- | ---- | ----- |
+百度网盘 | @iineva | https://pan.baidu.com/s/1E19Ykmrkm29VDzMqEwH-kw | v3hi |
+牛奶快传 | @Tatsumi_telegram | https://c-t.work/s/e3caec98939542 | 880888 | 可能很快过期
+MEGA | @Tatsumi_telegram | https://mega.nz/#F!rXpTFQzJ!mJv8xOC94-YnB445uGqhWA | |
 
 # 文件MD5
 
 * MD5 (TBuild.rar) = 5340d240306f0eaff9aa920f702d9be4
 * MD5 (python-2.7.17.amd64.msi) = 55040ce1c1ab34c32e71efe9533656b8
 * MD5 (vs_community_2017_1889860080.1578036349.exe) = 1dea05839475e38d9ba7e346b4142797
+* MD5 (ActivePerl-5.28.1.0000-MSWin32-x64-865dc3eb.msi) = e8f55640031dd793bbed129d8e3be104
 
 # 相关链接
 
@@ -31,6 +36,7 @@
 # 环境配置
 
 * 修改系统环境变量`PATH`添加两个值：`C:\TBuild\ThirdParty\gyp` `C:\TBuild\ThirdParty\Ninja`
+* 安装Perl：打开 `ActivePerl-5.28.1.0000-MSWin32-x64-865dc3eb.msi`，设置安装目录 `C:\TBuild\ThirdParty\Perl`
 * 安装Python27：打开 `python-2.7.17.amd64.msi` ，安装时设置安装目录：`C:\TBuild\ThirdParty\Python27\`
 * 安装VS2017：打开 `vs_community_2017_1889860080.1578036349.exe` ，安装时勾选 `通用Windows平台开发` 或者 `使用C++的桌面开发`，推荐选择后者不用下载这么多数据
 
@@ -43,7 +49,24 @@
 
 # 出错处理
 
-如果编译过程中提示某文件编码需要转 Unicode 使用 `Sublime Text` 将文件重新保存成 `UTF-8 with BOM` 编码即可重新编译，注意选择编码后需要在文件中随意输入一个字符再删除，才能成功修改编码保存
+1.如果编译过程中提示某文件编码需要转 Unicode 使用 `Sublime Text` 将文件重新保存成 `UTF-8 with BOM` 编码即可重新编译，注意选择编码后需要在文件中随意输入一个字符再删除，才能成功修改编码保存
 
 由于包比较大，压缩时间比较长，就麻烦自己手动操作处理一下了，已知文件：
 `TBuild\tdesktop\Telegram\ThirdParty\libtgvoip\VoIPController.cpp`
+
+
+2.编译提示 `character represented by universal-character-name '\u0430' cannot be represented in the current code page` 等几个警告
+指向config.h的324行а-яА-ЯёЁ这个字符串
+参考
+https://shine5402.top/msvc-c4566/
+将config.h的324行
+
+```
+static QRegularExpression regexp(QString::fromUtf8("[а-яА-ЯёЁ]"));
+```
+
+改为
+
+```
+static QRegularExpression regexp(QString::fromUtf8(u8"[а-яА-ЯёЁ]"));
+```
