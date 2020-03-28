@@ -13,6 +13,7 @@
 百度网盘 | @iineva | https://pan.baidu.com/s/1E19Ykmrkm29VDzMqEwH-kw | v3hi |
 牛奶快传 | @Tatsumi_telegram | https://c-t.work/s/e3caec98939542 | 880888 | 可能很快过期
 MEGA | @Tatsumi_telegram | https://mega.nz/#F!rXpTFQzJ!mJv8xOC94-YnB445uGqhWA | |
+MEGA | @Tatsumi_telegram | https://mega.nz/#F!OGBQWCgS!5PDXb4Yn9ezhXDnbH1qHfg | | 完整虚拟机文件打开即可编译
 
 # 文件MD5
 
